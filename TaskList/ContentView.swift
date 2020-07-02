@@ -8,9 +8,14 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
+    var taskStore = TaskStore() //this is the instance of the taskStore file
     var body: some View {
-        Text("Hello, World!")
+        List(taskStore.tasks.indices) { index in  //this creates a list 
+            Text(self.taskStore.tasks[index].name)
+        }
     }
 }
 
