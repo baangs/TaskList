@@ -15,6 +15,7 @@
 		575A561924AC0B2300CAD18A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 575A561724AC0B2300CAD18A /* LaunchScreen.storyboard */; };
 		575A562124AD776100CAD18A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575A562024AD776100CAD18A /* Task.swift */; };
 		575A562424AD78D800CAD18A /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575A562324AD78D800CAD18A /* TaskStore.swift */; };
+		575A562B24AEE8AB00CAD18A /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575A562A24AEE8AB00CAD18A /* NewTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		575A561A24AC0B2300CAD18A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		575A562024AD776100CAD18A /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		575A562324AD78D800CAD18A /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
+		575A562A24AEE8AB00CAD18A /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +64,7 @@
 			children = (
 				575A560C24AC0B2100CAD18A /* AppDelegate.swift */,
 				575A560E24AC0B2100CAD18A /* SceneDelegate.swift */,
-				575A561024AC0B2100CAD18A /* ContentView.swift */,
+				575A562724AEE74C00CAD18A /* Views */,
 				575A562224AD77D600CAD18A /* Models */,
 				575A561224AC0B2300CAD18A /* Assets.xcassets */,
 				575A561724AC0B2300CAD18A /* LaunchScreen.storyboard */,
@@ -87,6 +89,15 @@
 				575A562324AD78D800CAD18A /* TaskStore.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		575A562724AEE74C00CAD18A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				575A561024AC0B2100CAD18A /* ContentView.swift */,
+				575A562A24AEE8AB00CAD18A /* NewTaskView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				575A562424AD78D800CAD18A /* TaskStore.swift in Sources */,
+				575A562B24AEE8AB00CAD18A /* NewTaskView.swift in Sources */,
 				575A562124AD776100CAD18A /* Task.swift in Sources */,
 				575A560D24AC0B2100CAD18A /* AppDelegate.swift in Sources */,
 				575A560F24AC0B2100CAD18A /* SceneDelegate.swift in Sources */,

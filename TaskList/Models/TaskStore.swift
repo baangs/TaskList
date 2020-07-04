@@ -4,8 +4,15 @@
 //
 //  Created by RD on 7/1/20.
 //  Copyright © 2020 Reggie Daniels. All rights reserved.
+
+
 //we will create a property of this taskstore file and put an instance of it inside contentview
-//creating an array of tasks
+//creating an array of tasks/data
+//taskstore contains data that we want to display onto other views so it is a dependency, contenview and other views we create depend on task store, without taskstore there is no data to be display.
+
+
+
+
 class TaskStore {
     var tasks = [
         "Code a app",
@@ -18,7 +25,7 @@ class TaskStore {
         "Play Games",
         "Do Hw",
         "Eat food"
-        ].map{Task(name: $0)}                                         //transform task names into full fledged tasks using                                                                   .map{} closure and using $0
+        ].map{Task(name: $0)}                                         //transform task/data names into full fledged tasks using                                                                   .map{} closure and using $0
 }
 
 
