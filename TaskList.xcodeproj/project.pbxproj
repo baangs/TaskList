@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		572FC44724B4493000724827 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572FC44624B4493000724827 /* RowView.swift */; };
 		575A560D24AC0B2100CAD18A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575A560C24AC0B2100CAD18A /* AppDelegate.swift */; };
 		575A560F24AC0B2100CAD18A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575A560E24AC0B2100CAD18A /* SceneDelegate.swift */; };
 		575A561124AC0B2100CAD18A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575A561024AC0B2100CAD18A /* ContentView.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		572FC44624B4493000724827 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		575A560924AC0B2100CAD18A /* TaskList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		575A560C24AC0B2100CAD18A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		575A560E24AC0B2100CAD18A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				575A561024AC0B2100CAD18A /* ContentView.swift */,
 				575A562A24AEE8AB00CAD18A /* NewTaskView.swift */,
+				572FC44624B4493000724827 /* RowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			files = (
 				575A562424AD78D800CAD18A /* TaskStore.swift in Sources */,
 				575A562B24AEE8AB00CAD18A /* NewTaskView.swift in Sources */,
+				572FC44724B4493000724827 /* RowView.swift in Sources */,
 				575A562124AD776100CAD18A /* Task.swift in Sources */,
 				575A560D24AC0B2100CAD18A /* AppDelegate.swift in Sources */,
 				575A560F24AC0B2100CAD18A /* SceneDelegate.swift in Sources */,

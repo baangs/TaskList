@@ -11,10 +11,10 @@
 //taskstore contains data that we want to display onto other views so it is a dependency, contenview and other views we create depend on task store, without taskstore there is no data to be display.
 
 
+import Combine
 
-
-class TaskStore {
-    var tasks = [
+class TaskStore: ObservableObject {
+    @Published var tasks = [
         "Code a app",
         "Code a app",
         "Walk dog",
