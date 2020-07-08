@@ -9,7 +9,7 @@
 //we need to add  the taskstore array to this view, we add taskstore as a propety
 //that is using DI again same as in content view
 
-//when you bind something in a view you access it with self
+//when you bind something in a view you access it with self or $
 
 
 import SwiftUI
