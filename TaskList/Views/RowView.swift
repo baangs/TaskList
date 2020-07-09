@@ -6,13 +6,27 @@
 //  Copyright © 2020 Reggie Daniels. All rights reserved.
 //
 
+//When a typr is a value type you need to bind it with either self or $
+
 import SwiftUI
 
 struct RowView: View {
     
     @Binding var task: Task
+    
+    let checkmark = Image(systemName: "checkmark")
+    
     var body: some View {
-        Text(task.name)
+        NavigationLink(destination: TaskEditingView(task: $task)) {
+            
+            if task.completed {
+                checkmark
+            } else {
+                checkmark.hidden()
+            }
+            Text(task.name)
+                .strikethrough(task.completed)
+        }
     }
 }
 

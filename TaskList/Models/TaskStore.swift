@@ -26,6 +26,33 @@ class TaskStore: ObservableObject {
         "Do Hw",
         "Eat food"
         ].map{Task(name: $0)}                                         //transform task/data names into full fledged tasks using                                                                   .map{} closure and using $0
+    @Published var prioritizedTasks = [
+        PrioritizedTasks(priority: .high, names:
+        [   "Code a app",
+            "Code a app",
+            "Walk dog",
+            "Clean room" ]),
+        
+        PrioritizedTasks(priority: .medium, names:
+               [ "Rake leaves",
+                 "Clean Shoes" ]),
+        
+        PrioritizedTasks(priority: .low, names:
+               [ "Play Games" ]),
+        
+        PrioritizedTasks(priority: .no, names:
+               [ "Do Hw",
+                 "Eat food" ]),
+    ]
+
 }
 
 
+extension TaskStore.PrioritizedTasks {
+    init(priority: Task.Priority, names: [String]) {
+        self.init(
+            priority: priority,
+            tasks: names.map {Task(name: $0)}
+        )
+    }
+}
