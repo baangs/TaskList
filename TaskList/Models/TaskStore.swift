@@ -44,7 +44,9 @@ class TaskStore: ObservableObject {
                [ "Do Hw",
                  "Eat food" ]),
     ]
-
+    func getIndex(for priority: Task.Priority) -> Int {
+        prioritizedTasks.firstIndex {$0.priority == priority}!
+    }
 }
 
 

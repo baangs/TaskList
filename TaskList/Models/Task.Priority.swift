@@ -9,7 +9,7 @@
 // defining priorities you need to associate them to tasks
 
 extension Task {
-    enum Priority: String {
+    enum Priority: String, CaseIterable {
         case no, low, medium, high
     }
 }

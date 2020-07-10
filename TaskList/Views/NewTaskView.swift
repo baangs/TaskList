@@ -20,11 +20,26 @@ struct NewTaskView: View {
     @Environment(\.presentationMode) var presentationMode
     
     @State var text = "" //binding text var with empty string
+    @State var priority: Task.Priority = .no
     var body: some View {
         Form {
-            TextField("Task Name", text: $text)//textfield using $ to bind the text
+            TextField("Task Name", text: $text)//textfield usin $ to bind txt
+            
+            VStack {
+                Text("Picker")
+                Picker("Priority", selection: $priority.caseIndex) {
+                    ForEach(Task.Priority.allCases.indices) {
+                        priorityIndex in Text(
+                            Task.Priority.allCases[priorityIndex].rawValue.capitalized)
+                        .tag(priorityIndex)
+                    }
+                }
+                .pickerStyle(SegmentedPickerStyle())
+            }
+            
             Button("Add") {
-                self.taskStore.tasks.append(
+                let priorityIndex = self.taskStore.getIndex(for: self.priority)
+                self.taskStore.prioritizedTasks[priorityIndex].tasks.append(
                     Task(name: self.text)
                 )
                 

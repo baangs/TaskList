@@ -18,8 +18,7 @@ import SwiftUI
 struct ContentView: View {
     
     @ObservedObject var taskStore: TaskStore
-    
-    
+   
     @State var modalIsPresented = false
     var body: some View {
         NavigationView {

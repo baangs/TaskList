@@ -23,6 +23,7 @@
 		575F74BE24B6215100A3ED86 /* Task.Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F74BD24B6215100A3ED86 /* Task.Priority.swift */; };
 		575F74C024B6221A00A3ED86 /* TaskStore.PrioritizedTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F74BF24B6221A00A3ED86 /* TaskStore.PrioritizedTasks.swift */; };
 		575F74C224B6C2D200A3ED86 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F74C124B6C2D200A3ED86 /* SectionView.swift */; };
+		575F74C424B82C2B00A3ED86 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F74C324B82C2A00A3ED86 /* Binding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		575F74BD24B6215100A3ED86 /* Task.Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.Priority.swift; sourceTree = "<group>"; };
 		575F74BF24B6221A00A3ED86 /* TaskStore.PrioritizedTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.PrioritizedTasks.swift; sourceTree = "<group>"; };
 		575F74C124B6C2D200A3ED86 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		575F74C324B82C2A00A3ED86 /* Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Binding.swift; path = "../../Downloads/P04E07 Picker Views/Begin/TaskList/extension/Binding.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		575F74B824B61BDC00A3ED86 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
+				575F74C324B82C2A00A3ED86 /* Binding.swift */,
 				575F74B924B61BEF00A3ED86 /* ForEach.swift */,
 				575F74BB24B61BFA00A3ED86 /* IndexedCollection.swift */,
 			);
@@ -203,6 +206,7 @@
 				575A562424AD78D800CAD18A /* TaskStore.swift in Sources */,
 				575F74BC24B61BFA00A3ED86 /* IndexedCollection.swift in Sources */,
 				575A562B24AEE8AB00CAD18A /* NewTaskView.swift in Sources */,
+				575F74C424B82C2B00A3ED86 /* Binding.swift in Sources */,
 				572FC44924B5738C00724827 /* TaskEditingView.swift in Sources */,
 				575F74BA24B61BEF00A3ED86 /* ForEach.swift in Sources */,
 				572FC44724B4493000724827 /* RowView.swift in Sources */,
